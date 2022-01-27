@@ -16,7 +16,7 @@ int main(int argc, char *argv[]){
     }else if(rc == 0){
 
         close(STDOUT_FILENO);
-        open("./p4.output", O_CREAT|O_WRONLY|O_TRUNC, S_IRWXU);
+        open("./p3.output", O_CREAT|O_WRONLY|O_TRUNC, S_IRWXU);
 
         char *myargs[3];
         myargs[0] = strdup("wc");
